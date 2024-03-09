@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --expense-tracker-primary: 221, 208, 200; /* #DDD0C8 */
+  --expense-tracker-secondary: 200, 164, 140; /* #C8A48C */
+  --expense-tracker-tertiary: 83, 68, 57; /* #534439 */
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--expense-tracker-primary));
+}
+.et-btn{
+background-color: rgb(var(--expense-tracker-tertiary));
+}
+.et-color{
+  color: rgb(var(--expense-tracker-tertiary));
+  font-size:  large;
+
+}
+.et-component-bg {
+  background-color: rgb(var(--expense-tracker-secondary));
+}
+.et-bg {
+  background-color: #fff7f1;
+}
+
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

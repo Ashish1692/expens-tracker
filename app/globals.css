@@ -2,7 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
+:root {
+  --expense-tracker-primary: 221, 208, 200; /* #DDD0C8 */
+  --expense-tracker-secondary: 200, 164, 140; /* #C8A48C */
+  --expense-tracker-tertiary: 83, 68, 57; /* #534439 */
+}
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -22,6 +26,7 @@ background-color: rgb(var(--expense-tracker-tertiary));
 .et-bg {
   background-color: #fff7f1;
 }
+
 
 /*
 ! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
@@ -743,6 +748,15 @@ video {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+:root {
+  --expense-tracker-primary: 221, 208, 200;
+  /* #DDD0C8 */
+  --expense-tracker-secondary: 200, 164, 140;
+  /* #C8A48C */
+  --expense-tracker-tertiary: 83, 68, 57;
+  /* #534439 */
 }
 
 body {

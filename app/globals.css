@@ -37,39 +37,6 @@ body {
   background-color: #fff7f1;
 }
 
-.grid_lay {
-  /* border: 1px solid red; */
-
-  .item {
-    /* border: 1px solid green; */
-    padding: 3px;
-    margin: 4px;
-    display: flex;
-    flex-direction: row;
-
-
-    .sub_item {
-      /* border: 1px solid rgb(128, 0, 0); */
-      padding: 3px;
-      margin: 4px;
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-
-      .sub_sub_item {
-        /* border: 1px solid rgb(128, 100, 0); */
-        padding: 3px;
-        margin: 4px;
-        width: 100%;
-        flex: auto;
-        min-width: auto;
-        max-width: auto;
-        min-height: auto;
-      }
-    }
-  }
-
-}
 
 /*
 ! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com

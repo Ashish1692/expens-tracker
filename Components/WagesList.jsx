@@ -24,7 +24,6 @@ export default async function WagesList() {
     // const { recs } = await getTransactionRecs();
 
     return (
-
         <div className="relative overflow-x-auto shadow-md">
             <table className="w-full text-sm rtl:text-right border border-gray-500 rounded text-center">
                 <thead className="text-xs uppercase border border-gray-500 rounded ">

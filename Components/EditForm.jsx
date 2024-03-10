@@ -20,7 +20,7 @@ export default function EditForm({ id, user, amount, category, pay_meth, pay_typ
         e.preventDefault();
 
         try {
-            const res = await fetch(`/api/transactions/${id}`, {
+            const res = await fetch(`http://expens-tracker-eight.vercel.app/api/transactions/${id}`, {
                 method: "PUT",
                 headers: {
                     "Content-type": "application/json",

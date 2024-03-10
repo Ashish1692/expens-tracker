@@ -104,7 +104,7 @@ import RemoveBtn from './RemoveBtn';
 import { HiPencilAlt } from 'react-icons/hi';
 const getTransactionRecs = async () => {
     try {
-        const res = await fetch(`/api/transactions`, {
+        const res = await fetch(`http://expens-tracker-eight.vercel.app/api/transactions`, {
             cache: "no-store",
         });
         if (!res.ok) {
@@ -116,7 +116,7 @@ const getTransactionRecs = async () => {
     }
 };
 export default async function WagesList() {
-    const { recs } = await getTransactionRecs();
+    const { recs } = await getTransactionRecs() || {};
     return (
         <>
             {recs.map((t) => (

@@ -22,46 +22,46 @@ export default async function WagesList() {
             {recs.map((t) => (
                 <div key={t._id} className="et-compoent-res">
                     <div className="p-1 m-1 flex flex-row">
-                        <div className=" rounded border border-gray-500 p-1 mx-2 w-full flex flex-row">
+                        <div className=" rounded border border-gray-500 w-full flex flex-row et-block">
                             <div className=" p-1 m-1 w-full flex-auto min-w-fit max-w-fit min-h-fit rounded">User</div>
                             <div className=" p-1 m-1 w-full flex-auto min-w-fit max-w-fit min-h-fit   rounded">{t.user}</div>
                         </div>
-                        <div className=" rounded border border-gray-500 p-1 mx-2 w-full flex flex-row">
+                        <div className=" rounded border border-gray-500 w-full flex flex-row et-block">
                             <div className=" p-1 m-1 w-full flex-auto min-w-fit max-w-fit min-h-fit rounded">Amount</div>
                             <div className=" p-1 m-1 w-full flex-auto min-w-fit max-w-fit min-h-fit   rounded">{t.amount}</div>
                         </div>
                     </div>
 
                     <div className="p-1 m-1 flex flex-row">
-                        <div className=" rounded border border-gray-500 p-1 mx-2 w-full flex flex-row">
+                        <div className=" rounded border border-gray-500 w-full flex flex-row et-block">
                             <div className=" p-1 m-1 w-full flex-auto min-w-fit max-w-fit min-h-fit rounded">Category</div>
                             <div className=" p-1 m-1 w-full flex-auto min-w-fit max-w-fit min-h-fit   rounded">{t.category}</div>
                         </div>
-                        <div className=" rounded border border-gray-500 p-1 mx-2 w-full flex flex-row">
+                        <div className=" rounded border border-gray-500 w-full flex flex-row et-block">
                             <div className=" p-1 m-1 w-full flex-auto min-w-fit max-w-fit min-h-fit rounded">Date</div>
                             <div className=" p-1 m-1 w-full flex-auto min-w-fit max-w-fit min-h-fit   rounded">{t.date}</div>
                         </div>
                     </div>
 
                     <div className="p-1 m-1 flex flex-row ">
-                        <div className=" rounded border border-gray-500 p-1 mx-2 w-full flex flex-row">
+                        <div className=" rounded border border-gray-500 w-full flex flex-row et-block">
                             <div className=" p-1 m-1 w-full flex-auto min-w-fit max-w-fit min-h-fit rounded">Pay Method</div>
                             <div className=" p-1 m-1 w-full flex-auto min-w-fit max-w-fit min-h-fit   rounded">{t.pay_meth}</div>
                         </div>
-                        <div className=" rounded border border-gray-500 p-1 mx-2 w-full flex flex-row">
+                        <div className=" rounded border border-gray-500 w-full flex flex-row et-block">
                             <div className=" p-1 m-1 w-full flex-auto min-w-fit max-w-fit min-h-fit rounded">Pay Type</div>
                             <div className=" p-1 m-1 w-full flex-auto min-w-fit max-w-fit min-h-fit   rounded">{t.pay_type}</div>
                         </div>
                     </div>
 
                     <div className="p-1 m-1 flex flex-row ">
-                        <div className=" rounded border border-gray-500 p-1 mx-2 w-full flex flex-row">
+                        <div className=" rounded border border-gray-500 w-full flex flex-row et-block">
                             <div className=" p-1 m-1 w-full flex-auto min-w-fit max-w-fit min-h-fit rounded">Description</div>
                             <div className=" p-1 m-1 w-full flex-auto min-w-fit max-w-fit min-h-fit rounded">{t.description}</div>
                         </div>
-                        <div className=" rounded border border-gray-500 p-1 mx-2 w-full flex flex-row">
-                            <Link href={`/edit/${t._id}`} className="text-yellow-900 p-1 m-1 w-full flex-auto min-w-fit max-w-fit min-h-fit border border-yellow-900 rounded"><HiPencilAlt size={24} /></Link>
-                            <RemoveBtn id={t._id} className="p-1 m-1 w-full flex-auto min-w-fit max-w-fit min-h-fit border border-red-950 rounded" />
+                        <div className=" rounded border border-gray-500 w-full flex flex-row et-block">
+                            <Link href={`/edit/${t._id}`} className="text-yellow-900 p-1 m-1 w-full flex-auto min-w-fit max-w-fit min-h-fit rounded"><HiPencilAlt size={24} /></Link>
+                            <RemoveBtn id={t._id}/>
                         </div>
                     </div>
                 </div>

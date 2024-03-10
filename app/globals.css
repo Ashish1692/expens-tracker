@@ -31,8 +31,10 @@ body {
 .et-compoent-res{
 	background-color: rgb(var(--expense-tracker-secondary));
 	border: 2px solid rgb(var(--expense-tracker-primary));
-	margin: 15px;
-
+	margin: 15px 4px;
+}
+.et-block{
+	margin: 5px;
 }
 
 .et-component-bg-primary {

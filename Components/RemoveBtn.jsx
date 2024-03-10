@@ -21,7 +21,7 @@ export default function RemoveBtn({ id }) {
     };
 
     return (
-        <button onClick={removeTransaction} className='text-red-700 className="p-1 m-1 w-full flex-auto min-w-fit max-w-fit min-h-fit border border-red-950 rounded" '>
+        <button onClick={removeTransaction}>
             <HiOutlineTrash size={24} />
         </button>
     )

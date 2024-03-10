@@ -38,21 +38,28 @@ body {
 
 .et-block {
 	margin: 6px 2px;
-	padding: 4px;
+	padding: 7px;
 	color: #3c2b1f;
 	align-items: center;
 	border: 1px solid #372d26;
+	border-radius: 5px;
 	font-weight: bold;
 }
 
 .et-update {
+	font-weight: bold;
 	background-color: rgb(0, 76, 163);
 	color: white;
+	text-align: center;
+	margin: 0px 2px;
 }
 
 .et-remove {
+	font-weight: bold;
 	background-color: rgb(124, 0, 0);
 	color: white;
+	text-align: center;
+	margin: 0px 2px;
 }
 
 .et-component-bg-primary {
@@ -63,6 +70,64 @@ body {
 	background-color: #fff7f1;
 }
 
+.outer {
+	background-color: #fff7f1;
+	border-radius: 4px;
+	box-shadow: 1px 1px 6px;
+	padding: 10px;
+}
+
+.item {
+	padding: 4px;
+	margin: 8px 2px;
+	border-radius: 4px;
+	box-shadow: 1px 1px 3px #1d1611;
+	box-shadow: -1px -1px -1px #af927b;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	width: auto;
+	align-items: center;
+}
+
+.sub-item {
+	padding: 3px;
+	margin: 3px;
+	width: 100%;
+	font-weight: bold;
+}
+
+.btn {
+	display: flex;
+	flex-direction: row;
+}
+
+.et-update {
+	background-color: #165cbf;
+	text-align: center;
+	color: white;
+	padding: 8px;
+	border-radius: 4px;
+	box-shadow: 2px 2px 4px black;
+}
+
+.et-remove {
+	color: white;
+	text-align: center;
+	background-color: #c40f0f;
+	padding: 8px;
+	border-radius: 4px;
+
+	box-shadow: 2px 2px 4px black;
+}
+
+.value {
+	background-color: #534439;
+	width: auto;
+	padding: 8px;
+	border-radius: 5px;
+	color: white;
+	font-weight: normal;
+}
 
 /*
 ! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com

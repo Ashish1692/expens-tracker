@@ -23,7 +23,6 @@ body {
 .et-color {
 	color: rgb(var(--expense-tracker-tertiary));
 	font-size: large;
-
 }
 
 .et-component-bg {
@@ -37,37 +36,6 @@ body {
 .et-bg {
 	background-color: #fff7f1;
 }
-
-.grid_lay {
-
-	.item {
-		padding: 3px;
-		margin: 4px;
-		display: flex;
-		flex-direction: row;
-
-
-		.sub_item {
-			padding: 3px;
-			margin: 4px;
-			width: 100%;
-			display: flex;
-			flex-direction: row;
-
-			.sub_sub_item {
-				padding: 3px;
-				margin: 4px;
-				width: 100%;
-				flex: auto;
-				min-width: auto;
-				max-width: auto;
-				min-height: auto;
-			}
-		}
-	}
-
-}
-
 
 
 /*

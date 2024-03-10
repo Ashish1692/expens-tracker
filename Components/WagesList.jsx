@@ -20,8 +20,8 @@ export default async function WagesList() {
     return (
         <>
             {recs.map((t) => (
-                <div key={t._id} className="my-8 p-1 et-component-bg">
-                    <div className="p-1 m-1 flex flex-row gap-2">
+                <div key={t._id} className="my-12 p-1 et-component-bg border border-orange-400">
+                    <div className="p-1 m-1 flex flex-row">
                         <div className=" rounded border border-gray-500 p-1 m-1 w-full flex flex-row">
                             <div className=" p-1 m-1 w-full flex-auto min-w-fit max-w-fit min-h-fit rounded">User</div>
                             <div className=" p-1 m-1 w-full flex-auto min-w-fit max-w-fit min-h-fit   rounded">{t.user}</div>
@@ -32,7 +32,7 @@ export default async function WagesList() {
                         </div>
                     </div>
 
-                    <div className="p-1 m-1 flex flex-row  gap-2">
+                    <div className="p-1 m-1 flex flex-row">
                         <div className=" rounded border border-gray-500 p-1 m-1 w-full flex flex-row">
                             <div className=" p-1 m-1 w-full flex-auto min-w-fit max-w-fit min-h-fit rounded">Category</div>
                             <div className=" p-1 m-1 w-full flex-auto min-w-fit max-w-fit min-h-fit   rounded">{t.category}</div>
@@ -43,7 +43,7 @@ export default async function WagesList() {
                         </div>
                     </div>
 
-                    <div className="p-1 m-1 flex flex-row  gap-2">
+                    <div className="p-1 m-1 flex flex-row ">
                         <div className=" rounded border border-gray-500 p-1 m-1 w-full flex flex-row">
                             <div className=" p-1 m-1 w-full flex-auto min-w-fit max-w-fit min-h-fit rounded">Pay Method</div>
                             <div className=" p-1 m-1 w-full flex-auto min-w-fit max-w-fit min-h-fit   rounded">{t.pay_meth}</div>
@@ -54,18 +54,18 @@ export default async function WagesList() {
                         </div>
                     </div>
 
-                    <div className="p-1 m-1 flex flex-row  gap-2">
+                    <div className="p-1 m-1 flex flex-row ">
                         <div className=" rounded border border-gray-500 p-1 m-1 w-full flex flex-row">
                             <div className=" p-1 m-1 w-full flex-auto min-w-fit max-w-fit min-h-fit rounded">Description</div>
                             <div className=" p-1 m-1 w-full flex-auto min-w-fit max-w-fit min-h-fit rounded">{t.description}</div>
                         </div>
                         <div className=" rounded border border-gray-500 p-1 m-1 w-full flex flex-row">
-                            <Link href={`/edit/${t._id}`} className="text-yellow-900 p-1 m-1 w-full flex-auto min-w-fit max-w-fit min-h-fit rounded"><HiPencilAlt size={24} /></Link>
-                            <RemoveBtn id={t._id} className=" p-1 m-1 w-full flex-auto min-w-fit max-w-fit min-h-fit rounded" />
+                            <Link href={`/edit/${t._id}`} className="text-center text-yellow-900 p-1 m-1 w-full flex-auto min-w-fit max-w-fit min-h-fit border border-yellow-900   rounded"><HiPencilAlt size={24} /></Link>
+                            <RemoveBtn id={t._id} className="text-center p-1 m-1 w-full flex-auto min-w-fit max-w-fit min-h-fit border border-red-950 rounded" />
                         </div>
                     </div>
                 </div>
-            ))};
+            ))}
         </>
     )
 };

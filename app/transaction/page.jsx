@@ -32,7 +32,7 @@ export default function transaction() {
             });
 
             if (res.ok) {
-                router.refresh();
+
                 router.push("/");
                 router.refresh();
                 

@@ -33,7 +33,6 @@ export default function EditForm({ id, user, amount, category, pay_meth, pay_typ
                 throw new Error("Failed to update transaction");
             }
 
-            router.refresh();
             router.push("/");
             router.refresh();
 

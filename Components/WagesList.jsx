@@ -24,75 +24,55 @@ export default async function WagesList() {
     // const { recs } = await getTransactionRecs();
 
     return (
-        <div className="relative overflow-x-auto shadow-md">
-            <table className="w-full text-sm rtl:text-right border border-gray-500 rounded text-center">
-                <thead className="text-xs uppercase border border-gray-500 rounded ">
-                    <tr className='border border-gray-500 rounded'>
-                        <th scope="col" className="px-2 py-3 border border-gray-500 rounded">
-                            User
-                        </th>
-                        <th scope="col" className="px-2 py-3 border border-gray-500 rounded">
-                            Amount
-                        </th>
-                        <th scope="col" className="px-2 py-3 border border-gray-500 rounded">
-                            Category
-                        </th>
-                        <th scope="col" className="px-2 py-3 border border-gray-500 rounded">
-                            Payment Method
-                        </th>
-                        <th scope="col" className="px-2 py-3 border border-gray-500 rounded">
-                            Payment Type
-                        </th>
-                        <th scope="col" className="px-2 py-3 border border-gray-500 rounded">
-                            Date
-                        </th>
-                        <th scope="col" className="px-2 py-3 border border-gray-500 rounded">
-                            Description
-                        </th>
-                        <th scope="col" className="px-2 py-3 border border-gray-500 rounded">
-                            Update
-                        </th>
-                        <th scope="col" className="px-2 py-3 border border-gray-500 rounded">
-                            Remove
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {recs.map((t) => (
-                        <tr key={t._id} className="px-3 py-2 border border-gray-500 rounded">
-                            <td className="px-3 py-2 font-medium  whitespace-nowrap border border-gray-500 rounded">
-                                {t.user}
-                            </td>
-                            <td className="border border-gray-500 rounded">
-                                {t.amount}
-                            </td>
-                            <td className="border border-gray-500 rounded">
-                                {t.category}
-                            </td>
-                            <td className="border border-gray-500 rounded">
-                                {t.pay_meth}
-                            </td>
-                            <td className="border border-gray-500 rounded">
-                                {t.pay_type}
-                            </td>
-                            <td className="border border-gray-500 rounded">
-                                {t.date}
-                            </td>
-                            <td className="border border-gray-500 rounded">
-                                {t.description}
-                            </td>
-                            <td className="pl-9 border border-gray-500 rounded">
-                                <Link href={`/edit/${t._id}`} className='text-yellow-900'>
-                                    <HiPencilAlt size={24} />
-                                </Link>
-                            </td>
-                            <td className="border border-gray-500 rounded">
-                                <RemoveBtn id={t._id} />
-                            </td>
-                        </tr>
-                    ))}
-                </tbody>
-            </table>
-        </div>
+        
+            recs.map((t) => (
+                <div key={t._id} className="grid_lay m-4 max-w-screen-sm bg-gray-400 rounded-lg overflow-hidden sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl xl:max-w-screen-2xl">
+                    <div className="item">
+                        <div className="sub_item bg-gray-200 rounded border border-gray-300">
+                            <div className="sub_sub_item bg-blue-300 text-blue-800 rounded">User</div>
+                            <div className="sub_sub_item bg-green-300 text-green-800 rounded">{t.user}</div>
+                        </div>
+                        <div className="sub_item bg-gray-200 rounded border border-gray-300">
+                            <div className="sub_sub_item bg-blue-300 text-blue-800 rounded">Amount</div>
+                            <div className="sub_sub_item bg-green-300 text-green-800 rounded">{t.amount}</div>
+                        </div>
+                    </div>
+                    <div className="item">
+                        <div className="sub_item bg-gray-200 rounded border border-gray-300">
+                            <div className="sub_sub_item bg-blue-300 text-blue-800 rounded">Category</div>
+                            <div className="sub_sub_item bg-green-300 text-green-800 rounded">{t.category}</div>
+                        </div>
+                        <div className="sub_item bg-gray-200 rounded border border-gray-300">
+                            <div className="sub_sub_item bg-blue-300 text-blue-800 rounded">Date</div>
+                            <div className="sub_sub_item bg-green-300 text-green-800 rounded">{t.date}</div>
+                        </div>
+                    </div>
+                    <div className="item">
+                        <div className="sub_item bg-gray-200 rounded border border-gray-300">
+                            <div className="sub_sub_item bg-blue-300 text-blue-800 rounded">Pay Method</div>
+                            <div className="sub_sub_item bg-green-300 text-green-800 rounded">{t.pay_meth}</div>
+                        </div>
+                        <div className="sub_item bg-gray-200 rounded border border-gray-300">
+                            <div className="sub_sub_item bg-blue-300 text-blue-800 rounded">Pay Type</div>
+                            <div className="sub_sub_item bg-green-300 text-green-800 rounded">{t.pay_type}</div>
+                        </div>
+                    </div>
+                    <div className="item">
+                        <div className="sub_item bg-gray-200 rounded border border-gray-300">
+                            <div className="sub_sub_item bg-blue-300 text-blue-800 rounded">Description</div>
+                            <div className="sub_sub_item bg-green-300 text-green-800 rounded">{t.description}</div>
+                        </div>
+                        <div className="sub_item bg-gray-200 rounded border border-gray-300 flex justify-between items-center">
+                            <div className="sub_sub_item bg-blue-300 text-blue-800 rounded"><Link href={`/edit/${t._id}`} className="text-yellow-900">
+                                <HiPencilAlt size={24} />                           </Link></div>
+                            
+                            <div className="sub_sub_item bg-green-300 text-green-800 rounded"><RemoveBtn id={t._id} /></div>
+                            
+                        </div>
+                    </div>
+                </div>
+            ))
+        
+
     );
 }

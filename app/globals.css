@@ -3,30 +3,73 @@
 @tailwind utilities;
 
 :root {
-  --expense-tracker-primary: 221, 208, 200; /* #DDD0C8 */
-  --expense-tracker-secondary: 200, 164, 140; /* #C8A48C */
-  --expense-tracker-tertiary: 83, 68, 57; /* #534439 */
+  --expense-tracker-primary: 221, 208, 200;
+  /* #DDD0C8 */
+  --expense-tracker-secondary: 200, 164, 140;
+  /* #C8A48C */
+  --expense-tracker-tertiary: 83, 68, 57;
+  /* #534439 */
 }
 
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--expense-tracker-primary));
 }
-.et-btn{
-background-color: rgb(var(--expense-tracker-tertiary));
+
+.et-btn {
+  background-color: rgb(var(--expense-tracker-tertiary));
 }
-.et-color{
+
+.et-color {
   color: rgb(var(--expense-tracker-tertiary));
-  font-size:  large;
+  font-size: large;
 
 }
+
 .et-component-bg {
   background-color: rgb(var(--expense-tracker-secondary));
 }
+.et-component-bg-primary {
+  background-color: rgb(var(--expense-tracker-tertiary));
+}
+
 .et-bg {
   background-color: #fff7f1;
 }
 
+.grid_lay {
+  /* border: 1px solid red; */
+
+  .item {
+    /* border: 1px solid green; */
+    padding: 3px;
+    margin: 4px;
+    display: flex;
+    flex-direction: row;
+
+
+    .sub_item {
+      /* border: 1px solid rgb(128, 0, 0); */
+      padding: 3px;
+      margin: 4px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+
+      .sub_sub_item {
+        /* border: 1px solid rgb(128, 100, 0); */
+        padding: 3px;
+        margin: 4px;
+        width: 100%;
+        flex: auto;
+        min-width: auto;
+        max-width: auto;
+        min-height: auto;
+      }
+    }
+  }
+
+}
 
 /*
 ! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com

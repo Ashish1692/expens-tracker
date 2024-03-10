@@ -23,7 +23,7 @@ export default function transaction() {
         }
 
         try {
-            const res = await fetch(`http://expens-tracker-eight.vercel.app/api/transactions`, {
+            const res = await fetch(`https://expens-tracker-eight.vercel.app/api/transactions`, {
                 method: "POST",
                 headers: {
                     "Content-type": "application/json",

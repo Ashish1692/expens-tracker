@@ -104,7 +104,7 @@ import RemoveBtn from './RemoveBtn';
 import { HiPencilAlt } from 'react-icons/hi';
 const getTransactionRecs = async () => {
     try {
-        const res = await fetch(`http://expens-tracker-eight.vercel.app/api/transactions`, {
+        const res = await fetch(`https://expens-tracker-eight.vercel.app/api/transactions`, {
             cache: "no-store",
         });
         if (!res.ok) {

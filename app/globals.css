@@ -29,7 +29,7 @@ body {
 	background-color: rgb(var(--expense-tracker-secondary));
 }
 
-.et-compoent-res {
+/* .et-compoent-res {
 	background-color: #fff7f1;
 	margin: 15px 4px;
 	padding: 4px;
@@ -44,23 +44,9 @@ body {
 	border: 1px solid #372d26;
 	border-radius: 5px;
 	font-weight: bold;
-}
+} */
 
-.et-update {
-	font-weight: bold;
-	background-color: rgb(0, 76, 163);
-	color: white;
-	text-align: center;
-	margin: 0px 2px;
-}
 
-.et-remove {
-	font-weight: bold;
-	background-color: rgb(124, 0, 0);
-	color: white;
-	text-align: center;
-	margin: 0px 2px;
-}
 
 .et-component-bg-primary {
 	background-color: rgb(var(--expense-tracker-tertiary));
@@ -72,17 +58,18 @@ body {
 
 .outer {
 	background-color: #fff7f1;
-	border-radius: 4px;
-	box-shadow: 1px 1px 6px;
-	padding: 10px;
+	border-radius: 0.25rem;
+	box-shadow: 0.063rem 0.063rem 0.375rem;
+	padding: 0.625rem;
+	margin: 0.625rem;
 }
 
 .item {
-	padding: 4px;
-	margin: 8px 2px;
-	border-radius: 4px;
-	box-shadow: 1px 1px 3px #1d1611;
-	box-shadow: -1px -1px -1px #af927b;
+	padding: 0.25rem;
+	margin: 0.8rem 0.125rem;
+	border-radius: 0.25rem;
+	box-shadow: 0.063rem 0.063rem 0.188rem #1d1611;
+	box-shadow: -0.062rem -0.062rem -0.062rem #af927b;
 	display: grid;
 	grid-template-columns: 1fr 2fr;
 	width: auto;
@@ -90,8 +77,8 @@ body {
 }
 
 .sub-item {
-	padding: 3px;
-	margin: 3px;
+	padding: 0.188rem;
+	margin: 0.188rem;
 	width: 100%;
 	font-weight: bold;
 }
@@ -105,26 +92,26 @@ body {
 	background-color: #165cbf;
 	text-align: center;
 	color: white;
-	padding: 8px;
-	border-radius: 4px;
-	box-shadow: 2px 2px 4px black;
+	padding: 0.5rem;
+	border-radius: 0.25rem;
+	box-shadow: 0.125rem 0.125rem 0.25rem black;
 }
 
 .et-remove {
 	color: white;
 	text-align: center;
 	background-color: #c40f0f;
-	padding: 8px;
-	border-radius: 4px;
+	padding: 0.5rem;
+	border-radius: 0.25rem;
 
-	box-shadow: 2px 2px 4px black;
+	box-shadow: 0.125rem 0.125rem 0.25rem black;
 }
 
 .value {
 	background-color: #534439;
 	width: auto;
-	padding: 8px;
-	border-radius: 5px;
+	padding: 0.5rem;
+	border-radius: 0.313rem;
 	color: white;
 	font-weight: normal;
 }

@@ -2,7 +2,7 @@ import EditForm from "@/Components/EditForm";
 
 const getTrasactionbyid = async (id) => {
     try {
-        const res = await fetch(`http://localhost:3000/api/transactions/${id}`, {
+        const res = await fetch(`http://expens-tracker-eight.vercel.app/api/transactions/${id}`, {
             cache: "no-store",
         });
 

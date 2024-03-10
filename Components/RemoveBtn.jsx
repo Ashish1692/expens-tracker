@@ -10,7 +10,7 @@ export default function RemoveBtn({ id }) {
         const confirmed = confirm("Are you sure?");
 
         if (confirmed) {
-            const res = await fetch(`http://localhost:3000/api/transactions?id=${id}`, {
+            const res = await fetch(`http://expens-tracker-eight.vercel.app/api/transactions?id=${id}`, {
                 method: "DELETE",
             });
 

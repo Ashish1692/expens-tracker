@@ -54,7 +54,7 @@ import { HiPencilAlt } from 'react-icons/hi';
 
 const getTransactionRecs = async () => {
     try {
-        const res = await fetch(`http://localhost:3000/api/transactions`, {
+        const res = await fetch(`http://expens-tracker-eight.vercel.app/api/transactions`, {
             cache: "no-store",
         });
 

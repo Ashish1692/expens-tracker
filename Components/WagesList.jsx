@@ -69,7 +69,8 @@ const getTransactionRecs = async () => {
 };
 
 export default async function WagesList() {
-    const { recs } = await getTransactionRecs();
+    const { recs } = await getTransactionRecs() || {};
+    // const { recs } = await getTransactionRecs();
 
     return (
         <div className="relative overflow-x-auto shadow-md">

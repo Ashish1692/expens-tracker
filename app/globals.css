@@ -29,13 +29,16 @@ body {
 	background-color: rgb(var(--expense-tracker-secondary));
 }
 .et-compoent-res{
-	background-color: rgb(var(--expense-tracker-tertiary));
+	background-color: #fff7f1;
 	margin: 15px 4px;
+	padding: 4px;
 	border-radius: 4px;
 }
 .et-block{
-	margin: 5px 3px;
-	border: 1px solid #534439;
+	margin: 5px 4px;
+	background-color: #534439;
+	color: white;
+	border: 1px solid #e0c1ab;
 	border-radius: 4px;
 }
 

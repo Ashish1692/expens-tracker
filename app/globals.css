@@ -39,10 +39,8 @@ body {
 }
 
 .grid_lay {
-	/* border: 1px solid red; */
 
 	.item {
-		/* border: 1px solid green; */
 		padding: 3px;
 		margin: 4px;
 		display: flex;
@@ -50,7 +48,6 @@ body {
 
 
 		.sub_item {
-			/* border: 1px solid rgb(128, 0, 0); */
 			padding: 3px;
 			margin: 4px;
 			width: 100%;
@@ -58,7 +55,6 @@ body {
 			flex-direction: row;
 
 			.sub_sub_item {
-				/* border: 1px solid rgb(128, 100, 0); */
 				padding: 3px;
 				margin: 4px;
 				width: 100%;
@@ -314,6 +310,7 @@ button,
 [type='reset'],
 [type='submit'] {
 	-webkit-appearance: button;
+	appearance: button;
 	/* 1 */
 	background-color: transparent;
 	/* 2 */
@@ -361,6 +358,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
 
 [type='search'] {
 	-webkit-appearance: textfield;
+	appearance: textfield;
 	/* 1 */
 	outline-offset: -2px;
 	/* 2 */

@@ -28,6 +28,12 @@ body {
 .et-component-bg {
 	background-color: rgb(var(--expense-tracker-secondary));
 }
+.et-compoent-res{
+	background-color: rgb(var(--expense-tracker-secondary));
+	border: 2px solid rgb(var(--expense-tracker-primary));
+	margin: 15px;
+
+}
 
 .et-component-bg-primary {
 	background-color: rgb(var(--expense-tracker-tertiary));

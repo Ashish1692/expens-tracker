@@ -21,8 +21,6 @@ export default function RemoveBtn({ id }) {
     };
 
     return (
-        <button onClick={removeTransaction}>
-            <HiOutlineTrash size={24} />
-        </button>
+        <button onClick={removeTransaction}>Delete</button>
     )
 }

@@ -61,7 +61,7 @@ export default async function WagesList() {
                             <div className=" w-full flex-auto min-w-fit max-w-fit min-h-fit">{t.description}</div>
                         </div>
                         <div className="w-full flex flex-row et-block">
-                            <div className=" w-full flex-auto min-w-fit max-w-fit min-h-fit"><Link href={`/edit/${t._id}`}><HiPencilAlt size={24} /></Link></div>
+                            <div className=" w-full flex-auto min-w-fit max-w-fit min-h-fit"><Link href={`/edit/${t._id}`}>Update</Link></div>
                             <div className=" w-full flex-auto min-w-fit max-w-fit min-h-fit"><RemoveBtn id={t._id} /></div>
                         </div>
                     </div>

@@ -28,17 +28,31 @@ body {
 .et-component-bg {
 	background-color: rgb(var(--expense-tracker-secondary));
 }
-.et-compoent-res{
+
+.et-compoent-res {
 	background-color: #fff7f1;
 	margin: 15px 4px;
 	padding: 4px;
 	border-radius: 4px;
 }
-.et-block{
-	margin: 5px 3px;
+
+.et-block {
+	margin: 6px 2px;
 	padding: 4px;
-	color: #534439;
+	color: #3c2b1f;
 	align-items: center;
+	border: 1px solid #372d26;
+	font-weight: bold;
+}
+
+.et-update {
+	background-color: rgb(0, 76, 163);
+	color: white;
+}
+
+.et-remove {
+	background-color: rgb(124, 0, 0);
+	color: white;
 }
 
 .et-component-bg-primary {

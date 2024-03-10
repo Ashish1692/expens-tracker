@@ -61,8 +61,8 @@ export default async function WagesList() {
                             <div className=" w-full flex-auto min-w-fit max-w-fit min-h-fit">{t.description}</div>
                         </div>
                         <div className="w-full flex flex-row p-1 m-1">
-                            <div className=" w-full flex-auto min-w-fit max-w-fit min-h-fit bg-blue-800 text-white mr-2"><Link href={`/edit/${t._id}`}>Update</Link></div>
-                            <div className=" w-full flex-auto min-w-fit max-w-fit min-h-fit bg-red-700 text-white ml-2"><RemoveBtn id={t._id} /></div>
+                            <div className=" w-full flex-auto min-w-fit max-w-fit min-h-fit mr-2 et-update"><Link href={`/edit/${t._id}`}>Update</Link></div>
+                            <div className=" w-full flex-auto min-w-fit max-w-fit min-h-fit ml-2 et-remove"><RemoveBtn id={t._id} /></div>
                         </div>
                     </div>
                 </div>

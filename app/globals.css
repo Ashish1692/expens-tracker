@@ -35,11 +35,10 @@ body {
 	border-radius: 4px;
 }
 .et-block{
-	margin: 5px 4px;
-	background-color: #534439;
-	color: white;
-	border: 1px solid #e0c1ab;
-	border-radius: 4px;
+	margin: 5px 3px;
+	padding: 4px;
+	color: #534439;
+	align-items: center;
 }
 
 .et-component-bg-primary {
